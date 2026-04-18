@@ -50,12 +50,11 @@
 /* --- Modal Box --- */
 .modal-box {
   background: #ffffff;
-  padding: 25px;
+  padding: 20px;
   border-radius: 12px;
-  width: 450px;
+  width: 420px;
   max-width: 95%;
-  min-height: auto;
-  max-height: 85vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -106,11 +105,11 @@
 /* --- Modal Body --- */
 .modal-body {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: hidden;
   width: 100%;
   box-sizing: border-box;
-  padding-right: 10px;
-  font-size: 15px;
+  padding-right: 0px;
+  font-size: 14px;
   line-height: 1.5;
   color: #374151;
 }

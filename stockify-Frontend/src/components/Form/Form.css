@@ -10,14 +10,11 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   width: 100%;
-  padding: 24px;
+  padding: 8px;
   box-sizing: border-box;
   background-color: var(--form-bg);
-  border-radius: 16px;
-  box-shadow: var(--form-shadow);
-  border: 1px solid var(--form-border);
 }
 
 /* --- Form Groups & Labels --- */

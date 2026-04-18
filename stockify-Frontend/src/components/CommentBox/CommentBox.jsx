@@ -127,17 +127,17 @@ export default function CommentBox({ moduleType, moduleId }) {
     >
       <div
         style={{
-          height: 350,
+          height: 250,
           overflowY: "auto",
           overflowX: "hidden",
           border: "1px solid #e0e0e0",
-          padding: "15px",
+          padding: "10px",
           borderRadius: "8px",
-          marginBottom: 15,
+          marginBottom: 10,
           background: "#e5ddd5", // WhatsApp style background pattern color
           display: "flex",
           flexDirection: "column",
-          gap: "10px"
+          gap: "8px"
         }}
       >
         {comments.length > 0

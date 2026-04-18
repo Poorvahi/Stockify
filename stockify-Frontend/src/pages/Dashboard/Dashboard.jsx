@@ -88,15 +88,21 @@ export default function Dashboard({ totalProducts, totalStock, totalValue }) {
       <div className="chart-grid">
         <div className="chart-card">
           <h4>Sales Over Time</h4>
-          <Line data={{ labels: Object.keys(analytics.salesOverTime), datasets: [{ label: "Sales", data: Object.values(analytics.salesOverTime), borderColor: "#1d4ed8", backgroundColor: "rgba(29,78,216,0.2)" }] }} />
+          <div style={{ position: "relative", flexGrow: 1, height: "100%", width: "100%" }}>
+            <Line options={{ maintainAspectRatio: false }} data={{ labels: Object.keys(analytics.salesOverTime), datasets: [{ label: "Sales", data: Object.values(analytics.salesOverTime), borderColor: "#1d4ed8", backgroundColor: "rgba(29,78,216,0.2)" }] }} />
+          </div>
         </div>
         <div className="chart-card">
           <h4>Category Distribution</h4>
-          <Bar data={{ labels: Object.keys(analytics.categoryDistribution), datasets: [{ label: "Products", data: Object.values(analytics.categoryDistribution), backgroundColor: "#7c3aed" }] }} />
+          <div style={{ position: "relative", flexGrow: 1, height: "100%", width: "100%" }}>
+            <Bar options={{ maintainAspectRatio: false }} data={{ labels: Object.keys(analytics.categoryDistribution), datasets: [{ label: "Products", data: Object.values(analytics.categoryDistribution), backgroundColor: "#7c3aed" }] }} />
+          </div>
         </div>
         <div className="chart-card">
           <h4>Stock Status</h4>
-          <Pie data={{ labels: ["Available", "Low", "Out"], datasets: [{ data: [analytics.stockStatus.available || 0, analytics.stockStatus.low || 0, analytics.stockStatus.out || 0], backgroundColor: ["#16a34a", "#f59e0b", "#dc2626"] }] }} />
+          <div style={{ position: "relative", flexGrow: 1, height: "100%", width: "100%" }}>
+            <Pie options={{ maintainAspectRatio: false }} data={{ labels: ["Available", "Low", "Out"], datasets: [{ data: [analytics.stockStatus.available || 0, analytics.stockStatus.low || 0, analytics.stockStatus.out || 0], backgroundColor: ["#16a34a", "#f59e0b", "#dc2626"] }] }} />
+          </div>
         </div>
       </div>
     </div>
