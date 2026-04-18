@@ -47,12 +47,12 @@
 
 /* --- Error State --- */
 .input-error {
-  border-color: #ef4444 !important;
+  border-color: red !important;
   background-color: #fffefb;
 }
 
 .error-message {
-  color: #ef4444;
+  color: red;
   font-size: 12px;
   margin-top: 4px;
   font-weight: 500;

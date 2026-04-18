@@ -107,4 +107,12 @@
     padding: 16px;
     border-radius: 12px;
   }
+}
+
+/* --- Validation Error --- */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: 500;
 }
